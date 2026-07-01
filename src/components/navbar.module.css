@@ -1,0 +1,33 @@
+.navWrapper {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.sraf {
+    position: absolute;
+    left: 16rem;
+}
+
+.logoWrapper {
+    position: relative;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+
+
+}
+
+.logoText {
+    text-transform: uppercase;
+    color: var(--text);
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.flagImg {
+    border: 1px solid blue;
+}
