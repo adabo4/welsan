@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Montserrat } from "next/font/google";
+import localFont from "next/font/local";
+import { Geist, Geist_Mono, Montserrat, Poppins } from "next/font/google";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -15,7 +16,17 @@ const geistMono = Geist_Mono({
 const montSerrat = Montserrat({
   variable: "--font-montserrat",
   subsets: ["latin"],
-  weight: ["700"],
+  weight: ["400", "500", "600", "700"],
+});
+
+const amertha = localFont({
+  src: "../../public/fonts/Amertha.ttf",
+  variable: "--font-amertha",
+});
+const poppins = Poppins({
+  variable: "--font-poppins",
+  subsets: ["latin"],
+  weight: ["400", "500"],
 });
 
 export const metadata: Metadata = {
@@ -29,7 +40,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${geistSans.variable} ${geistMono.variable}`}>
+    <html
+      lang="en"
+      className={`${geistSans.variable} ${geistMono.variable} ${amertha.variable} ${montSerrat.variable} ${poppins.variable}`}
+    >
       <body>{children}</body>
     </html>
   );
