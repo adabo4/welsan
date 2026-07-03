@@ -67,14 +67,14 @@ export default function Header() {
         </div>
         {/* Bullets */}
 
-        {/* <ul className={styles.bulletList}>
+        <ul className={styles.bulletList}>
           {bullets.map((bullet) => (
             <li key={bullet} className={styles.bulletItem}>
               <CheckCircle2 className={styles.bulletIcon} size={20} />
               <span>{bullet}</span>
             </li>
           ))}
-        </ul> */}
+        </ul>
       </div>
     </header>
   );
