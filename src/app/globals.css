@@ -3,6 +3,7 @@
   --foreground: #171717;
   --text: #022157;
   --text-blue: #002b75;
+  --bg-blue: #10265d;
 }
 
 @media (prefers-color-scheme: dark) {

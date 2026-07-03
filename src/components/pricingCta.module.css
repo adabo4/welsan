@@ -1,0 +1,227 @@
+.section {
+    padding: 5rem 5vw;
+    background: linear-gradient(180deg, #eef3ff 0%, #ffffff 100%);
+}
+
+.card {
+    max-width: 1350px;
+    margin: 0 auto;
+    padding: 4rem;
+
+    display: grid;
+    grid-template-columns: 1fr 1px 1.25fr;
+    gap: 3.5rem;
+    align-items: center;
+
+    background: rgba(255, 255, 255, 0.92);
+    border: 1px solid rgba(26, 39, 68, 0.08);
+    border-radius: 34px;
+    box-shadow: 0 24px 70px rgba(26, 39, 68, 0.12);
+}
+
+.priceSide {
+    text-align: center;
+}
+
+.brush {
+    width: 500px;
+    height: 240px;
+    background: url("/images/smuha.png") center/contain no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.note {
+    width: 500px;
+    height: 240px;
+    background: url("/images/smuha zlata.png") center/contain no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.price {
+    color: #c9a227;
+    font-family: var(--font-montserrat);
+    font-size: 8rem;
+    font-weight: 800;
+    line-height: 0.85;
+}
+
+.currency {
+    font-family: var(--font-montserrat);
+    font-size: 2.6rem;
+    font-weight: 800;
+    color: white;
+}
+
+.duration {
+    font-family: var(--font-montserrat);
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: white;
+}
+
+.note {
+    margin: 2rem 0 0;
+    color: var(--text);
+    font-family: var(--font-amertha);
+    font-size: 2.7rem;
+    line-height: 1.05;
+}
+
+.divider {
+    width: 1px;
+    height: 310px;
+    background: linear-gradient(180deg,
+            transparent,
+            rgba(201, 162, 39, 0.75),
+            transparent);
+}
+
+.infoSide {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+}
+
+.infoItem {
+    display: flex;
+    align-items: center;
+    gap: 1.4rem;
+}
+
+.iconCircle {
+    width: 76px;
+    height: 76px;
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: var(--text);
+    background: #eef3ff;
+    border-radius: 50%;
+}
+
+.infoItem h3 {
+    margin: 0;
+
+    color: var(--text);
+    font-family: var(--font-montserrat);
+    font-size: 1.7rem;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.infoItem p {
+    margin: 0.25rem 0 0;
+
+    color: rgba(26, 39, 68, 0.72);
+    font-family: var(--font-montserrat);
+    font-size: 1.15rem;
+    font-weight: 500;
+}
+
+.line {
+    height: 1px;
+    width: 80%;
+    background: rgba(26, 39, 68, 0.12);
+    margin-left: 6rem;
+}
+
+.ctaButton {
+    margin-top: 0.5rem;
+    padding: 1.2rem 1.3rem 1.2rem 2rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+
+    border: none;
+    border-radius: 22px;
+
+    color: white;
+    background: linear-gradient(135deg, #10265d 0%, #1d3578 100%);
+
+    font-family: var(--font-montserrat);
+    font-size: 1.65rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    cursor: pointer;
+
+    box-shadow: 0 14px 30px rgba(16, 38, 93, 0.28);
+}
+
+.ctaButton span {
+    width: 56px;
+    height: 56px;
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: var(--text);
+    background: linear-gradient(135deg, #f7df8b, #c9a227);
+    border-radius: 50%;
+}
+
+.script {
+    margin: 0;
+
+    color: var(--text);
+    font-family: var(--font-amertha);
+    font-size: 3rem;
+    text-align: center;
+}
+
+.bottomBar {
+    max-width: 1250px;
+    margin: 2.5rem auto 0;
+    padding: 1.5rem 2rem;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+
+    background: rgba(255, 255, 255, 0.75);
+    border-radius: 26px;
+}
+
+.bottomItem {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+
+    color: var(--text);
+    font-family: var(--font-montserrat);
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.bottomItem svg {
+    color: var(--text);
+    flex-shrink: 0;
+}
+
+@media (max-width: 950px) {
+    .card {
+        grid-template-columns: 1fr;
+        padding: 2rem;
+    }
+
+    .divider {
+        display: none;
+    }
+
+    .bottomBar {
+        grid-template-columns: 1fr 1fr;
+    }
+}
