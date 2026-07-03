@@ -9,7 +9,7 @@ export default function Navbar() {
   return (
     <>
       <nav className={styles.navWrapper}>
-        <div className={styles.logoWrapper}>
+        {/* <div className={styles.logoWrapper}>
           <Image
             className={styles.logo}
             src={logo}
@@ -18,6 +18,21 @@ export default function Navbar() {
             alt="logo"
           ></Image>
           <p className={styles.logoText}>Vzdelávanie, ktoré dáva zmysel</p>
+        </div> */}
+
+        <div className={styles.logoWrapper}>
+          <Image
+            src={logo}
+            alt="WELSAN logo"
+            width={170}
+            height={70}
+            className={styles.logo}
+            priority
+          />
+
+          <span className={styles.logoText}>
+            Vzdelávanie, ktoré dáva zmysel
+          </span>
         </div>
         <Image
           alt="sraf"
