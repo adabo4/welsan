@@ -2,7 +2,16 @@
     display: flex;
     justify-content: space-between;
     position: relative;
+    background: linear-gradient(90deg,
+            #ffffff 0%,
+            #fcfcfd 35%,
+            #f5f7ff 70%,
+            #e8eeff 100%);
+    display: flex;
+    box-shadow: 2px 0px 5px 1px rgba(0, 0, 0, 0.3);
+
 }
+
 
 .sraf {
     position: absolute;
@@ -14,9 +23,9 @@
     width: 300px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
-    border: 1px solid black;
+
 
 
 }
@@ -28,6 +37,4 @@
     font-size: 13px;
 }
 
-.flagImg {
-    border: 1px solid blue;
-}
+.flagImg {}

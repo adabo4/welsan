@@ -13,8 +13,8 @@ export default function Navbar() {
           <Image
             className={styles.logo}
             src={logo}
-            width={190}
-            height={130}
+            width={100}
+            height={60}
             alt="logo"
           ></Image>
           <p className={styles.logoText}>Vzdelávanie, ktoré dáva zmysel</p>
@@ -22,16 +22,16 @@ export default function Navbar() {
         <Image
           alt="sraf"
           src={sraf}
-          width={180}
-          height={180}
+          width={90}
+          height={90}
           className={styles.sraf}
         ></Image>
 
         <div className={styles.flagWrapper}>
           <Image
             src={flag}
-            width={400}
-            height={150}
+            width={250}
+            height={80}
             alt="flag"
             className={styles.flagImg}
           ></Image>
