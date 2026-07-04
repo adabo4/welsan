@@ -137,3 +137,154 @@
     flex-shrink: 0;
     color: var(--color-bullets)
 }
+
+@media (max-width: 1100px) {
+    .headerWrapper {
+        padding-bottom: 3rem;
+    }
+
+    .heroWrapper {
+        flex: 0 0 48%;
+    }
+
+    .headerText {
+        margin-right: 1.5rem;
+    }
+
+    .individual {
+        font-size: 3.5rem;
+    }
+
+    .online {
+        font-size: 2.8rem;
+    }
+
+    .english {
+        font-size: 5rem;
+    }
+
+    .subtitleWrapper h2 {
+        font-size: 1.25rem;
+    }
+
+    .bulletItem {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 850px) {
+    .headerWrapper {
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 3rem;
+        background: linear-gradient(180deg,
+                #ffffff 0%,
+                #f7f9ff 55%,
+                #e8eeff 100%);
+    }
+
+    .heroWrapper {
+        width: 100%;
+        flex: none;
+        max-height: 430px;
+    }
+
+    .hero {
+        width: 100%;
+        height: auto;
+
+        -webkit-mask-image: linear-gradient(to bottom,
+                black 0%,
+                black 68%,
+                rgba(0, 0, 0, 0.55) 84%,
+                transparent 100%);
+        mask-image: linear-gradient(to bottom,
+                black 0%,
+                black 68%,
+                rgba(0, 0, 0, 0.55) 84%,
+                transparent 100%);
+    }
+
+    .headerText {
+        width: 100%;
+        margin-right: 0;
+        padding: 0 2rem;
+        margin-top: -1rem;
+    }
+
+    .individual {
+        font-size: 3.2rem;
+    }
+
+    .online {
+        font-size: 2.5rem;
+    }
+
+    .english {
+        font-size: 4.8rem;
+    }
+
+    .subtitleWrapper {
+        margin-top: 1.3rem;
+    }
+
+    .bulletList {
+        margin-top: 1.5rem;
+        max-width: 520px;
+    }
+}
+
+@media (max-width: 520px) {
+    .headerWrapper {
+        padding-bottom: 2.5rem;
+    }
+
+    .heroWrapper {
+        max-height: 330px;
+    }
+
+    .hero {
+        min-height: 330px;
+        object-fit: cover;
+        object-position: left center;
+    }
+
+    .headerText {
+        padding: 0 1.2rem;
+    }
+
+    .individual {
+        font-size: 2.35rem;
+    }
+
+    .online {
+        font-size: 1.85rem;
+    }
+
+    .english {
+        font-size: 3.6rem;
+    }
+
+    .subtitleWrapper h2 {
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .goals {
+        font-size: 1.6rem;
+    }
+
+    .bulletList {
+        gap: 0.65rem;
+    }
+
+    .bulletItem {
+        align-items: flex-start;
+        font-size: 0.88rem;
+        line-height: 1.35;
+    }
+
+    .bulletIcon {
+        margin-top: 0.1rem;
+    }
+}
