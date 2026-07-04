@@ -1,9 +1,9 @@
 import Image from "next/image";
-import React from "react";
 import flag from "../../public/images/flag2.png";
 import logo from "../../public/images/logo.png";
 import sraf from "../../public/images/sraf.png";
 import styles from "./navbar.module.css";
+import ContactButton from "./ctaButton";
 
 export default function Navbar() {
   return (
@@ -41,6 +41,10 @@ export default function Navbar() {
           height={90}
           className={styles.sraf}
         ></Image>
+
+        <div className={styles.ctaButton}>
+          <ContactButton btnText="Rezervuj si hodinu"></ContactButton>
+        </div>
 
         <div className={styles.flagWrapper}>
           <Image

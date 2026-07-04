@@ -4,6 +4,11 @@
   --text: #022157;
   --text-blue: #002b75;
   --bg-blue: #10265d;
+  --color-secondary: #b78c00;
+  --color-button: #c9a227;
+  --color-bullets: #d4af37;
+  ;
+
 }
 
 @media (prefers-color-scheme: dark) {

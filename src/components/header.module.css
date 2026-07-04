@@ -76,15 +76,14 @@
 } */
 
 .english {
-    font-family: var(--font-amertha);
-
+    font-family: var(--font-dancingScript);
     font-weight: 500;
     line-height: .95;
     display: inline-block;
     font-size: 6rem;
     letter-spacing: .01em;
     transform: scaleY(.96);
-    color: #b78c00;
+    color: var(--color-secondary);
 
 }
 
@@ -136,5 +135,5 @@
 
 .bulletIcon {
     flex-shrink: 0;
-    color: #d4af37;
+    color: var(--color-bullets)
 }
