@@ -8,6 +8,7 @@ import {
   Poppins,
 } from "next/font/google";
 import "./globals.css";
+import { ModalProvider } from "@/context/ModalContext";
 
 const montSerrat = Montserrat({
   variable: "--font-montserrat",
@@ -50,7 +51,9 @@ export default function RootLayout({
       lang="en"
       className={`${dancingScript.variable} ${amertha.variable} ${montSerrat.variable} ${poppins.variable} ${bylinerScript.variable}`}
     >
-      <body>{children}</body>
+      <body>
+        <ModalProvider>{children}</ModalProvider>
+      </body>
     </html>
   );
 }
