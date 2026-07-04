@@ -31,15 +31,6 @@
 
 }
 
-.note {
-    width: 500px;
-    height: 240px;
-    background: url("/images/smuha zlata.png") center/contain no-repeat;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 
 .price {
     color: var(--color-bullets);
@@ -62,6 +53,15 @@
     font-size: 1.8rem;
     font-weight: 700;
     color: white;
+}
+
+.note {
+    width: 500px;
+    height: 240px;
+    background: url("/images/smuha zlata.png") center/contain no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .note {
@@ -195,7 +195,7 @@
     flex-shrink: 0;
 }
 
-@media (max-width: 950px) {
+/* @media (max-width: 950px) {
     .card {
         grid-template-columns: 1fr;
         padding: 2rem;
@@ -207,5 +207,231 @@
 
     .bottomBar {
         grid-template-columns: 1fr 1fr;
+    }
+} */
+
+/* ---------- Tablet ---------- */
+
+@media (max-width: 1024px) {
+
+    .section {
+        padding: 4rem 2rem;
+    }
+
+    .card {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+        padding: 2.5rem;
+    }
+
+    .divider {
+        display: none;
+    }
+
+    .priceSide {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .brush,
+    .note {
+        width: 420px;
+        height: 190px;
+    }
+
+    .price {
+        font-size: 6.2rem;
+    }
+
+    .currency {
+        font-size: 2rem;
+    }
+
+    .duration {
+        font-size: 1.4rem;
+    }
+
+    .note {
+        font-size: 2.3rem;
+    }
+
+    .infoItem h3 {
+        font-size: 1.4rem;
+    }
+
+    .infoItem p {
+        font-size: 1rem;
+    }
+
+    .ctaButton {
+        font-size: 1.3rem;
+    }
+
+    .bottomBar {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* ---------- Mobile ---------- */
+
+@media (max-width: 768px) {
+
+    .infoSide {
+        display: flex;
+    }
+
+    .onlineLessons {
+        order: 2;
+    }
+
+    .line {
+        order: 3;
+    }
+
+    .experience {
+        order: 4;
+    }
+
+    .ctaWrapper {
+        order: 1;
+        margin-bottom: 1rem;
+    }
+
+    .section {
+        padding: 3rem 1rem;
+    }
+
+    .card {
+        padding: 1.5rem;
+        border-radius: 24px;
+    }
+
+    .brush,
+    .note {
+        width: 100%;
+        max-width: 340px;
+        height: 145px;
+        background-size: contain;
+    }
+
+    .price {
+        font-size: 4.7rem;
+    }
+
+    .currency {
+        font-size: 1.5rem;
+    }
+
+    .duration {
+        font-size: 1rem;
+    }
+
+    .note {
+        margin-top: 1rem;
+        font-size: 1.9rem;
+    }
+
+
+    .infoItem {
+        align-items: flex-start;
+        gap: 1rem;
+    }
+
+    .iconCircle {
+        width: 60px;
+        height: 60px;
+    }
+
+    .iconCircle svg {
+        width: 28px;
+        height: 28px;
+    }
+
+    .infoItem h3 {
+        font-size: 1.15rem;
+    }
+
+    .infoItem p {
+        font-size: .95rem;
+    }
+
+    .line {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .ctaButton {
+        width: 100%;
+        padding: 1rem 1.2rem;
+        font-size: 1rem;
+    }
+
+    .ctaButton span {
+        width: 46px;
+        height: 46px;
+    }
+
+    .script {
+        font-size: 2.2rem;
+    }
+
+    .bottomBar {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        padding: 1.3rem;
+    }
+
+    .bottomItem {
+        justify-content: flex-start;
+        font-size: .95rem;
+    }
+}
+
+/* ---------- Small phones ---------- */
+
+@media (max-width: 480px) {
+
+    .brush,
+    .note {
+        height: 120px;
+    }
+
+    .price {
+        font-size: 3.8rem;
+    }
+
+    .currency {
+        font-size: 1.2rem;
+    }
+
+    .duration {
+        font-size: .9rem;
+    }
+
+    .note {
+        font-size: 1.55rem;
+    }
+
+    .iconCircle {
+        width: 52px;
+        height: 52px;
+    }
+
+    .iconCircle svg {
+        width: 24px;
+        height: 24px;
+    }
+
+    .infoItem h3 {
+        font-size: 1rem;
+    }
+
+    .infoItem p {
+        font-size: .9rem;
+    }
+
+    .script {
+        font-size: 1.8rem;
     }
 }

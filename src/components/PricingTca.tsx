@@ -39,7 +39,7 @@ export default function PricingCta() {
         <div className={styles.divider} />
 
         <div className={styles.infoSide}>
-          <div className={styles.infoItem}>
+          <div className={`${styles.infoItem} ${styles.onlineLessons}`}>
             <span className={styles.iconCircle}>
               <Monitor size={34} />
             </span>
@@ -51,7 +51,7 @@ export default function PricingCta() {
 
           <div className={styles.line} />
 
-          <div className={styles.infoItem}>
+          <div className={`${styles.infoItem} ${styles.experience}`}>
             <span className={styles.iconCircle}>
               <UserRound size={34} />
             </span>
@@ -61,14 +61,15 @@ export default function PricingCta() {
             </div>
           </div>
 
-          <button className={styles.ctaButton}>
-            Rezervuj si svoju hodinu
-            <span>
-              <ArrowRight size={30} />
-            </span>
-          </button>
-
-          <p className={styles.script}>začni ešte dnes!</p>
+          <div className={styles.ctaWrapper}>
+            <button className={styles.ctaButton}>
+              Rezervuj si svoju hodinu
+              <span>
+                <ArrowRight size={30} />
+              </span>
+            </button>
+            <p className={styles.script}>začni ešte dnes!</p>
+          </div>
         </div>
       </div>
 
