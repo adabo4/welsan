@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import hero from "../../public/images/hero image.png";
+import hero from "../../public/images/hero.png";
 import { styleText } from "util";
 import { CheckCircle2 } from "lucide-react";
 

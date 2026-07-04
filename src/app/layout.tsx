@@ -23,6 +23,10 @@ const amertha = localFont({
   src: "../../public/fonts/Amertha.ttf",
   variable: "--font-amertha",
 });
+const bylinerScript = localFont({
+  src: "../../public/fonts/BylinerScript.otf",
+  variable: "--font-byliner",
+});
 const poppins = Poppins({
   variable: "--font-poppins",
   subsets: ["latin"],
@@ -42,7 +46,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} ${amertha.variable} ${montSerrat.variable} ${poppins.variable}`}
+      className={`${geistSans.variable} ${geistMono.variable} ${amertha.variable} ${montSerrat.variable} ${poppins.variable} ${bylinerScript.variable}`}
     >
       <body>{children}</body>
     </html>

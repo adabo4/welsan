@@ -68,11 +68,24 @@
     text-transform: uppercase;
 }
 
-.english {
+/* .english {
     font-family: var(--font-amertha);
     font-size: 6.2rem;
     font-weight: 500;
     line-height: .95;
+} */
+
+.english {
+    font-family: var(--font-amertha);
+
+    font-weight: 500;
+    line-height: .95;
+    display: inline-block;
+    font-size: 6rem;
+    letter-spacing: .01em;
+    transform: scaleY(.96);
+    color: #b78c00;
+
 }
 
 .subtitleWrapper {

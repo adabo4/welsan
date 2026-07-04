@@ -1,4 +1,5 @@
 import Benefits from "@/components/Benefits";
+import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import Navbar from "@/components/Navbar";
 import PricingCta from "@/components/PricingTca";
@@ -10,6 +11,7 @@ export default function Home() {
       <Header></Header>
       <Benefits></Benefits>
       <PricingCta />
+      <Footer></Footer>
     </main>
   );
 }

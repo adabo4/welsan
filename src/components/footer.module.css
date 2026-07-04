@@ -1,3 +1,126 @@
 .footer {
-    background-color: var(--bg-blue);
+    margin: 6rem auto 3rem;
+    width: min(95%, 1600px);
+    background: #0f1e3e;
+    border-radius: 34px;
+    border: 2px solid #c9a227;
+    overflow: hidden;
+    box-shadow: 0 20px 50px rgba(16, 38, 93, .25);
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1.2fr 1.2fr .9fr .9fr;
+    gap: 3rem;
+    padding: 4rem;
+}
+
+.column {
+    position: relative;
+}
+
+.column:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: -1.5rem;
+    width: 1px;
+    height: 100%;
+    background: rgba(201, 162, 39, .45);
+}
+
+.logo {
+    margin: 0;
+    color: white;
+    font-size: 4rem;
+    letter-spacing: .18em;
+    font-family: var(--font-montserrat);
+}
+
+.goldLine {
+    width: 60px;
+    height: 4px;
+    margin: 1.2rem 0 2rem;
+    background: #c9a227;
+    border-radius: 99px;
+}
+
+.slogan {
+    margin: 0;
+    color: white;
+    font-size: 2.8rem;
+    line-height: 1.15;
+    font-family: var(--font-amertha);
+}
+
+.heading {
+    margin: 0 0 2rem;
+    color: #c9a227;
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-family: var(--font-montserrat);
+}
+
+.contact {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.4rem;
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-family: var(--font-montserrat);
+}
+
+.contact svg {
+    color: #c9a227;
+}
+
+.company {
+    display: flex;
+    gap: 1rem;
+    color: white;
+    font-family: var(--font-montserrat);
+}
+
+.company svg {
+    margin-top: .2rem;
+    color: #c9a227;
+}
+
+.company p {
+    margin: .25rem 0;
+}
+
+.flag {
+    margin-top: 3rem;
+}
+
+.bottom {
+    padding: 2rem 4rem;
+    border-top: 1px solid rgba(201, 162, 39, .4);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    font-family: var(--font-montserrat);
+    font-size: .95rem;
+}
+
+.links {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.links a {
+    color: white;
+    text-decoration: none;
+    opacity: .8;
+    transition: .2s;
+}
+
+.links a:hover {
+    opacity: 1;
+    color: #c9a227;
 }
