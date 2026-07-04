@@ -87,6 +87,10 @@
 
 }
 
+.reservationButton {
+    margin-top: 1rem;
+}
+
 .subtitleWrapper {
     margin-top: 1.8rem;
     display: flex;
@@ -209,7 +213,7 @@
         width: 100%;
         margin-right: 0;
         padding: 0 2rem;
-        margin-top: -1rem;
+        margin-top: 2rem;
     }
 
     .individual {

@@ -146,6 +146,7 @@
     text-transform: uppercase;
     cursor: pointer;
     box-shadow: 0 14px 30px rgba(16, 38, 93, 0.28);
+    transition: transform ease-in-out .3s, box-shadow ease-in-out .3s;
 }
 
 .ctaButton span {
@@ -158,6 +159,18 @@
     color: var(--text);
     background: linear-gradient(135deg, #f7df8b, #c9a227);
     border-radius: 50%;
+
+}
+
+.ctaButton:hover {
+    background: #c9a227;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(26, 39, 68, 0.18);
+}
+
+.ctaButton:hover span {
+    background: linear-gradient(135deg, #2952b4, #1a2744);
+    color: white;
 }
 
 .script {
@@ -167,6 +180,7 @@
     font-size: 3rem;
     text-align: center;
 }
+
 
 .bottomBar {
     max-width: 1250px;

@@ -1,10 +1,11 @@
 import Image from "next/image";
 import React from "react";
 import hero from "../../public/images/hero.png";
-import { styleText } from "util";
-import { CheckCircle2 } from "lucide-react";
+import { CheckCircle2, ArrowRightIcon } from "lucide-react";
 
 import styles from "./header.module.css";
+import btnStyles from "./ctaButton.module.css";
+import ContactButton from "./ctaButton";
 
 export default function Header() {
   const bullets = [
@@ -64,6 +65,14 @@ export default function Header() {
             Vaším tempom. Podľa{" "}
             <span className={styles.goals}>vašich cieľov.</span>
           </h2>
+        </div>
+
+        <div className={styles.reservationButton}>
+          <ContactButton
+            btnText="Rezervujte si svoju hodinu"
+            classname={btnStyles.blue}
+            icon={<ArrowRightIcon></ArrowRightIcon>}
+          ></ContactButton>
         </div>
         {/* Bullets */}
 
