@@ -53,7 +53,9 @@ export default function Footer() {
             <Building2 size={22} />
 
             <div>
-              <p>Angličtina WELSAN, s. r. o.</p>
+              <p className={styles.companyName}>
+                Angličtina WELSAN,&nbsp;s.&nbsp;r.&nbsp;o.
+              </p>
               <p>IČO: 51842769</p>
             </div>
           </div>

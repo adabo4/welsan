@@ -81,6 +81,11 @@
     gap: 1rem;
     color: white;
     font-family: var(--font-montserrat);
+
+}
+
+.companyName {
+    white-space: nowrap;
 }
 
 .company svg {
