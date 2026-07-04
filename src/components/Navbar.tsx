@@ -4,6 +4,7 @@ import logo from "../../public/images/logo.png";
 import sraf from "../../public/images/sraf.png";
 import styles from "./navbar.module.css";
 import ContactButton from "./ctaButton";
+import Link from "next/link";
 
 export default function Navbar() {
   return (
@@ -11,14 +12,16 @@ export default function Navbar() {
       <nav className={styles.navWrapper}>
         <div className={styles.leftSide}>
           <div className={styles.logoWrapper}>
-            <Image
-              src={logo}
-              alt="WELSAN logo"
-              width={170}
-              height={70}
-              className={styles.logo}
-              priority
-            />
+            <Link href="/">
+              <Image
+                src={logo}
+                alt="WELSAN logo"
+                width={170}
+                height={70}
+                className={styles.logo}
+                priority
+              />
+            </Link>
 
             <span className={styles.logoText}>
               Vzdelávanie, ktoré dáva zmysel
