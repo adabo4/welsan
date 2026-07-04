@@ -4,6 +4,7 @@ import Image from "next/image";
 import brush from "../../public/images/brush2.png";
 
 import styles from "./footer.module.css";
+import Link from "next/link";
 
 export default function Footer() {
   return (
@@ -88,7 +89,7 @@ export default function Footer() {
         <p>© 2026 Angličtina WELSAN, s. r. o. Všetky práva vyhradené.</p>
 
         <div className={styles.links}>
-          <a href="#">Ochrana osobných údajov</a>
+          <Link href="/gdpr">Ochrana osobných údajov</Link>
           <span>•</span>
           <a href="#">Cookies</a>
           <span>•</span>

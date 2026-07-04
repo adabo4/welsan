@@ -1,0 +1,90 @@
+.container {
+    min-height: 100vh;
+    background: #f8fbfb;
+    padding: 8rem 1.25rem 5rem;
+}
+
+.card {
+    max-width: 900px;
+    margin: 0 auto;
+    background: #ffffff;
+    border: 1px solid #e3eeee;
+    border-radius: 28px;
+    padding: 3rem;
+    box-shadow: 0 20px 60px rgba(27, 83, 87, 0.08);
+}
+
+.label {
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #4fa7a7;
+    margin-bottom: 0.75rem;
+}
+
+.card h1 {
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    line-height: 1.1;
+    color: #173f42;
+    margin-bottom: 1rem;
+}
+
+.updated {
+    color: #6b7c7e;
+    margin-bottom: 3rem;
+}
+
+.card section {
+    padding-top: 2rem;
+    margin-top: 2rem;
+    border-top: 1px solid #e8f1f1;
+}
+
+.card h2 {
+    font-size: 1.35rem;
+    color: #173f42;
+    margin-bottom: 1rem;
+}
+
+.card p,
+.card li {
+    color: #435b5e;
+    line-height: 1.8;
+    font-size: 1rem;
+}
+
+.card ul {
+    padding-left: 1.25rem;
+    margin: 1rem 0;
+}
+
+.card li {
+    margin-bottom: 0.4rem;
+    list-style-type: disc;
+}
+
+.card a {
+    color: #2f8f90;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.card a:hover {
+    text-decoration: underline;
+}
+
+.card strong {
+    color: #173f42;
+}
+
+@media (max-width: 700px) {
+    .container {
+        padding: 6rem 1rem 3rem;
+    }
+
+    .card {
+        padding: 2rem 1.25rem;
+        border-radius: 22px;
+    }
+}

@@ -1,6 +1,7 @@
 "use client";
 import { useState } from "react";
 import styles from "./contactForm.module.css";
+import Link from "next/link";
 
 export default function ContactForm() {
   const [status, setStatus] = useState<
@@ -86,6 +87,10 @@ export default function ContactForm() {
       >
         {status === "loading" ? "Odosielam..." : "Odoslať správu"}
       </button>
+      <p>
+        Odoslaním formulára potvrdzujete, že ste sa oboznámili s{" "}
+        <Link href="/gdpr">Podmienkami ochrany osobných údajov</Link>.
+      </p>
 
       {messageText && (
         <p
