@@ -63,6 +63,26 @@
     transform: translateY(-2px);
 }
 
+.submitButton:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+    transform: none;
+}
+
+.successMessage {
+    margin: 0.5rem 0 0;
+    color: #1f7a4d;
+    font-family: var(--font-montserrat);
+    font-weight: 600;
+}
+
+.errorMessage {
+    margin: 0.5rem 0 0;
+    color: #b42318;
+    font-family: var(--font-montserrat);
+    font-weight: 600;
+}
+
 @media (max-width: 640px) {
     .row {
         grid-template-columns: 1fr;

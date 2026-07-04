@@ -1,3 +1,4 @@
+"use client";
 import {
   ArrowRight,
   CalendarDays,
@@ -10,6 +11,7 @@ import {
 import styles from "./pricingCta.module.css";
 import Image from "next/image";
 import smuha from "../../public/images/smuha.png";
+import { useModal } from "@/context/ModalContext";
 
 const bottomItems = [
   { icon: ShieldCheck, text: "Bezpečné online prostredie" },
@@ -19,6 +21,7 @@ const bottomItems = [
 ];
 
 export default function PricingCta() {
+  const { openContactModal } = useModal();
   return (
     <section className={styles.section}>
       <div className={styles.card}>
@@ -62,7 +65,7 @@ export default function PricingCta() {
           </div>
 
           <div className={styles.ctaWrapper}>
-            <button className={styles.ctaButton}>
+            <button onClick={openContactModal} className={styles.ctaButton}>
               Rezervuj si svoju hodinu
               <span>
                 <ArrowRight size={30} />

@@ -1,8 +1,52 @@
+"use client";
+import { useState } from "react";
 import styles from "./contactForm.module.css";
 
 export default function ContactForm() {
+  const [status, setStatus] = useState<
+    "idle" | "loading" | "success" | "error"
+  >("idle");
+
+  const [messageText, setMessageText] = useState("");
+
+  async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
+    e.preventDefault();
+    const form = e.currentTarget; // 👈 toto pridaj hneď hore
+    setStatus("loading");
+    setMessageText("");
+
+    const formData = new FormData(form);
+
+    const data = {
+      name: formData.get("name"),
+      email: formData.get("email"),
+      phone: formData.get("phone"),
+      message: formData.get("message"),
+    };
+
+    const res = await fetch("/api/contact", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(data),
+    });
+
+    const result = await res.json();
+
+    if (!res.ok) {
+      setStatus("error");
+      setMessageText(result.message || "Niečo sa pokazilo.");
+      return;
+    }
+
+    setStatus("success");
+    setMessageText("Ďakujeme, správa bola odoslaná. Ozveme sa vám čoskoro.");
+    form.reset();
+  }
+
   return (
-    <form className={styles.form}>
+    <form className={styles.form} onSubmit={handleSubmit}>
       <div className={styles.row}>
         <label>
           Meno a priezvisko
@@ -35,9 +79,23 @@ export default function ContactForm() {
         />
       </label>
 
-      <button type="submit" className={styles.submitButton}>
-        Odoslať správu
+      <button
+        disabled={status === "loading"}
+        type="submit"
+        className={styles.submitButton}
+      >
+        {status === "loading" ? "Odosielam..." : "Odoslať správu"}
       </button>
+
+      {messageText && (
+        <p
+          className={
+            status === "success" ? styles.successMessage : styles.errorMessage
+          }
+        >
+          {messageText}
+        </p>
+      )}
     </form>
   );
 }
