@@ -1,5 +1,6 @@
 .navWrapper {
     display: flex;
+    align-items: center;
     justify-content: space-between;
     position: relative;
     background: linear-gradient(90deg,
@@ -13,9 +14,19 @@
 }
 
 
-.sraf {
+/* .sraf {
     position: absolute;
-    left: 16rem;
+    left: 18rem;
+} */
+
+.leftSide {
+    display: flex;
+}
+
+.rightSide {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
 }
 
 /* .logoWrapper {
