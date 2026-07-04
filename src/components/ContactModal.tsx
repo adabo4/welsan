@@ -1,5 +1,4 @@
 "use client";
-
 import ContactForm from "./ContactForm";
 import styles from "./contactModal.module.css";
 

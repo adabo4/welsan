@@ -9,6 +9,7 @@ import {
 } from "next/font/google";
 import "./globals.css";
 import { ModalProvider } from "@/context/ModalContext";
+import Navbar from "@/components/Navbar";
 
 const montSerrat = Montserrat({
   variable: "--font-montserrat",
@@ -52,7 +53,10 @@ export default function RootLayout({
       className={`${dancingScript.variable} ${amertha.variable} ${montSerrat.variable} ${poppins.variable} ${bylinerScript.variable}`}
     >
       <body>
-        <ModalProvider>{children}</ModalProvider>
+        <ModalProvider>
+          <Navbar></Navbar>
+          {children}
+        </ModalProvider>
       </body>
     </html>
   );

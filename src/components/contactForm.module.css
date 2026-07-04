@@ -83,6 +83,132 @@
     font-weight: 600;
 }
 
+.checkboxWrapper {
+    display: flex;
+    align-items: flex-start;
+    gap: .8rem;
+
+    font-family: var(--font-montserrat);
+    font-size: .92rem;
+    color: var(--text-blue);
+
+    line-height: 1.5;
+}
+
+.checkboxWrapper input {
+    margin-top: .2rem;
+    width: 18px;
+    height: 18px;
+
+    accent-color: #c9a227;
+
+    cursor: pointer;
+}
+
+.checkboxWrapper span {
+    flex: 1;
+}
+
+.checkboxWrapper a {
+    color: #10265d;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.checkboxWrapper a:hover {
+    text-decoration: underline;
+}
+
+.submitButton:disabled {
+    opacity: .55;
+    cursor: not-allowed;
+    transform: none;
+    box-shadow: none;
+}
+
+.checkboxWrapper {
+
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 1rem;
+
+    cursor: pointer;
+
+    user-select: none;
+
+    margin-top: .5rem;
+
+}
+
+.checkbox {
+
+    width: 24px;
+
+    height: 24px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border: 2px solid #c9a227;
+
+    border-radius: 8px;
+
+    background: white;
+
+    color: white;
+
+    transition: .25s ease;
+}
+
+.checkboxChecked {
+
+    background: #c9a227;
+
+    border-color: #c9a227;
+
+    color: white;
+
+    transform: scale(1.05);
+
+}
+
+.checkboxText {
+
+    margin: 0;
+
+    font-family: var(--font-montserrat);
+
+    font-size: .92rem;
+
+    line-height: 1.6;
+
+    color: var(--text-blue);
+
+}
+
+.checkboxText a {
+
+    color: #10265d;
+
+    font-weight: 700;
+
+    text-decoration: none;
+
+}
+
+.checkboxText a:hover {
+
+    color: #c9a227;
+
+}
+
 @media (max-width: 640px) {
     .row {
         grid-template-columns: 1fr;

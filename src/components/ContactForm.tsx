@@ -1,6 +1,7 @@
 "use client";
 import { useState } from "react";
 import styles from "./contactForm.module.css";
+import { Check } from "lucide-react";
 import Link from "next/link";
 
 export default function ContactForm() {
@@ -9,6 +10,7 @@ export default function ContactForm() {
   >("idle");
 
   const [messageText, setMessageText] = useState("");
+  const [gdprAccepted, setGdprAccepted] = useState(false);
 
   async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
@@ -24,6 +26,14 @@ export default function ContactForm() {
       phone: formData.get("phone"),
       message: formData.get("message"),
     };
+
+    if (!gdprAccepted) {
+      setStatus("error");
+      setMessageText(
+        "Pred odoslaním je potrebné súhlasiť so spracovaním osobných údajov.",
+      );
+      return;
+    }
 
     const res = await fetch("/api/contact", {
       method: "POST",
@@ -80,17 +90,34 @@ export default function ContactForm() {
         />
       </label>
 
+      <div
+        className={styles.checkboxWrapper}
+        onClick={() => setGdprAccepted((prev) => !prev)}
+      >
+        <div
+          className={`${styles.checkbox} ${
+            gdprAccepted ? styles.checkboxChecked : ""
+          }`}
+        >
+          {gdprAccepted && <Check size={14} strokeWidth={3} />}
+        </div>
+
+        <p className={styles.checkboxText}>
+          Súhlasím so spracovaním osobných údajov. Viac informácií nájdete v{" "}
+          <Link href="/gdpr" target="_blank" rel="noopener noreferrer">
+            Zásadách ochrany osobných údajov.
+          </Link>
+          .
+        </p>
+      </div>
+
       <button
-        disabled={status === "loading"}
+        disabled={!gdprAccepted || status === "loading"}
         type="submit"
         className={styles.submitButton}
       >
         {status === "loading" ? "Odosielam..." : "Odoslať správu"}
       </button>
-      <p>
-        Odoslaním formulára potvrdzujete, že ste sa oboznámili s{" "}
-        <Link href="/gdpr">Podmienkami ochrany osobných údajov</Link>.
-      </p>
 
       {messageText && (
         <p
