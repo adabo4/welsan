@@ -33,7 +33,7 @@ const dancingScript = Dancing_Script({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://anglictinawelsan.sk"),
+  metadataBase: new URL("https://anglictinawelsan.com"),
 
   title: {
     default: "Angličtina WELSAN | Individuálne online hodiny angličtiny",
@@ -67,7 +67,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Angličtina WELSAN",
     description: "Individuálne online hodiny angličtiny pre deti aj dospelých.",
-    url: "https://anglictinawelsan.sk",
+    url: "https://anglictinawelsan.com",
     siteName: "Angličtina WELSAN",
     locale: "sk_SK",
     type: "website",

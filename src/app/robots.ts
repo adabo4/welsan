@@ -6,6 +6,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: "*",
       allow: "/",
     },
-    sitemap: "https://anglictinawelsan.sk/sitemap.xml",
+    sitemap: "https://anglictinawelsan.com/sitemap.xml",
   };
 }

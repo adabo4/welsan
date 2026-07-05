@@ -4,9 +4,9 @@ const organizationSchema = {
 
   name: "Angličtina WELSAN",
 
-  url: "https://anglictinawelsan.sk",
+  url: "https://anglictinawelsan.com",
 
-  logo: "https://anglictinawelsan.sk/logo.png",
+  logo: "https://anglictinawelsan.com/logo.png",
 
   email: "infowelsan@gmail.com",
 
