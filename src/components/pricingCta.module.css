@@ -378,8 +378,12 @@
 
     .note {
         margin-top: 1rem;
-        font-size: 1.9rem;
-        padding-bottom: .5rem;
+        font-size: 1.8rem;
+        max-width: 420px;
+        margin: 0 auto;
+        padding-bottom: 1.5rem;
+
+
     }
 
 
