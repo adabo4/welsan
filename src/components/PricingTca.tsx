@@ -23,7 +23,7 @@ const bottomItems = [
 export default function PricingCta() {
   const { openContactModal } = useModal();
   return (
-    <section className={styles.section}>
+    <section id="pricing" className={styles.section}>
       <div className={styles.card}>
         <div className={styles.priceSide}>
           <div className={styles.brush}>

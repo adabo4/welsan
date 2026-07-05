@@ -10,7 +10,6 @@
             #e8eeff 100%);
     display: flex;
     box-shadow: 2px 0px 5px 1px rgba(0, 0, 0, 0.3);
-
 }
 
 
@@ -21,12 +20,14 @@
 
 .leftSide {
     display: flex;
+    align-items: center;
 }
 
 .rightSide {
     display: flex;
     align-items: center;
     gap: 2rem;
+
 }
 
 /* .logoWrapper {
@@ -76,6 +77,152 @@
     text-transform: uppercase;
 }
 
-.ctaButton {
-    align-self: center;
+
+.navLinks {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 3rem;
+    justify-self: flex-start;
+}
+
+.navLinks button {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    color: inherit;
+    font: inherit;
+    color: var(--text-blue);
+    font-weight: 600;
+    font-family: var(--font-montserrat);
+}
+
+.menuIcon {
+    display: none;
+    flex-shrink: 0;
+}
+
+/* 
+@media screen and (max-width: 1024px) {
+
+    .menuIcon {
+        display: block;
+        z-index: 30;
+    }
+
+    .navLinks {
+        position: fixed;
+        top: 0;
+        left: 0;
+        min-height: 100vh;
+        min-width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1.5rem;
+        background-color: white;
+        transition: transform 0.4s ease;
+        transform: translateY(-100%);
+        z-index: 20;
+
+    }
+
+    .responsiveNav {
+        transform: translateY(0);
+    }
+} */
+
+@media screen and (max-width: 1024px) {
+    .navWrapper {
+        height: 6.5rem;
+        padding: 0 1.5rem;
+    }
+
+    .logoWrapper {
+        margin: 0;
+        align-items: flex-start;
+
+    }
+
+    .logo {
+        width: 130px;
+        height: auto;
+    }
+
+    .logoText,
+    .sraf,
+    .flagImg {
+        display: none;
+    }
+
+    .rightSide {
+        margin-left: auto;
+        margin-right: 1rem;
+    }
+
+    .menuIcon {
+        display: block;
+        width: 32px;
+        height: 32px;
+        color: #11276b;
+        z-index: 80;
+    }
+
+    .navLinks {
+        position: fixed;
+        inset: 0;
+        min-height: 100vh;
+        width: 100%;
+        background: #f7f8ff;
+        flex-direction: column;
+        justify-content: center;
+        gap: 2rem;
+        transform: translateY(-100%);
+        transition: transform 0.35s ease;
+        z-index: 70;
+    }
+
+    .responsiveNav {
+        transform: translateY(0);
+    }
+
+    .navLinks button {
+        font-size: 2rem;
+    }
+}
+
+/* mobil */
+@media screen and (max-width: 640px) {
+    .navWrapper {
+        height: 5.5rem;
+        padding: 0 1rem;
+    }
+
+    .logo {
+        width: 105px;
+    }
+
+    .rightSide button,
+    .rightSide a {
+        font-size: 0.85rem;
+        padding: 0.75rem 1rem;
+    }
+
+    .menuIcon {
+        width: 28px;
+        height: 28px;
+    }
+
+    .ctaNavButton {
+        width: 100%;
+        max-width: 250px;
+        min-width: 100px;
+        flex-shrink: 0;
+
+    }
+
+
+
 }
