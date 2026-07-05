@@ -131,6 +131,13 @@
     }
 
     /* ========================================= */
+    /* DESKTOP */
+    /* ========================================= */
+
+
+
+
+    /* ========================================= */
     /* TABLET */
     /* ========================================= */
 
@@ -213,14 +220,21 @@
             grid-template-columns: 1fr;
             gap: 2.5rem;
             padding: 2rem;
-            text-align: center;
+            text-align: left;
+            /*center*/
         }
 
         .column {
             display: flex;
             flex-direction: column;
-            align-items: center;
+            align-items: flex-start;
+            /*center*/
+            width: min(100%, 250px);
+            /*X*/
+            margin: 0 auto;
+            /*X*/
         }
+
 
         .goldLine {
             margin: 1rem auto 1.8rem;
@@ -240,14 +254,19 @@
         }
 
         .contact {
-            justify-content: center;
+            justify-content: flex-start;
+            /*center*/
+            text-align: left;
+            /*X*/
             font-size: .95rem;
         }
 
         .company {
-            justify-content: center;
+            justify-content: flex-start;
+            /*center*/
             align-items: flex-start;
-            text-align: center;
+            text-align: left;
+            /*center*/
         }
 
         .companyName {
@@ -258,6 +277,8 @@
             width: 100px;
             height: auto;
             margin-top: 1.5rem;
+            align-self: center;
+            /*X*/
         }
 
         .bottom {
@@ -283,6 +304,10 @@
 
         .container {
             padding: 1.5rem;
+        }
+
+        .column {
+            width: min(100%, 200px);
         }
 
         .logo {
