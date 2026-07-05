@@ -104,6 +104,13 @@ export default function RootLayout({
       lang="en"
       className={`${dancingScript.variable} ${amertha.variable} ${montSerrat.variable} ${poppins.variable} ${bylinerScript.variable}`}
     >
+      <head>
+        <script
+          defer
+          src="https://cloud.umami.is/script.js"
+          data-website-id="290a00de-11ec-4c5d-aaab-29bc861c49cf"
+        ></script>
+      </head>
       <body>
         <ModalProvider>
           <Navbar></Navbar>
