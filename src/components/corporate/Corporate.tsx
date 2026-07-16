@@ -74,7 +74,7 @@ export default function Corporate() {
 
             <h2 className={styles.title}>
               Firemné vzdelávanie{" "}
-              <span className={styles.titleAccent}>pre firmy</span>
+              <span className={styles.titleAccent}>angličtiny</span>
             </h2>
 
             <p className={styles.subtitle}>
