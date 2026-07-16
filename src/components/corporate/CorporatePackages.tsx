@@ -1,5 +1,5 @@
-import CorporatePackageCard from "./CorporatePackageCard";
 import styles from "./corporate.module.css";
+import CorporatePackageCard from "./CorporatePackageCard";
 import type { CorporatePackagesProps } from "./types";
 
 export default function CorporatePackages({
@@ -12,10 +12,7 @@ export default function CorporatePackages({
 
       <div className={styles.packagesGrid}>
         {packages.map((packageItem) => (
-          <CorporatePackageCard
-            key={packageItem.name}
-            packageItem={packageItem}
-          />
+          <CorporatePackageCard key={packageItem.name} {...packageItem} />
         ))}
       </div>
     </div>
