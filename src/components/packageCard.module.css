@@ -1,0 +1,76 @@
+.cardWrapper {
+    width: 400px;
+    border: 3px var(--color-border) solid;
+    border-radius: 20px;
+    padding: 1rem;
+    font-family: var(--font-montserrat);
+    box-shadow: 0 3px 6px 0px rgba(0, 0, 0, .3);
+
+}
+
+.cardWrapper.featured {
+    background-color: #0f1e3e;
+    border: 3px var(--color-secondary) solid;
+}
+
+.titleWrapper {
+    display: flex;
+    align-items: center;
+    gap: .8rem;
+}
+
+.title {
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+.featured .title {
+    color: #c9a227;
+}
+
+.featured .classes {
+    color: white;
+}
+
+.featured .price {
+    color: var(--color-secondary)
+}
+
+.starColor {
+    color: var(--color-bullets);
+}
+
+.employee {
+    color: rgb(165, 165, 165);
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: small;
+    margin: 1rem 0;
+}
+
+.classes {
+    font-weight: 600;
+    font-size: .9rem;
+}
+
+.time {
+    color: rgb(150, 149, 149);
+    font-size: .8rem;
+    margin: 1rem 0;
+}
+
+.price {
+    font-weight: 900;
+    font-size: large;
+}
+
+.footer {
+    border-top: 1px solid rgba(200, 200, 200, 0.394);
+    margin: .5rem 0;
+}
+
+.footerText {
+    color: rgb(150, 149, 149);
+    font-size: small;
+    margin: 0.5rem 0 1rem;
+}

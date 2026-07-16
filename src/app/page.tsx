@@ -1,7 +1,7 @@
 import Benefits from "@/components/Benefits";
+import CompanyCourses from "@/components/CompanyCourses";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
-import Navbar from "@/components/Navbar";
 import PricingCta from "@/components/PricingTca";
 
 export default function Home() {
@@ -9,6 +9,7 @@ export default function Home() {
     <main>
       <Header></Header>
       <Benefits></Benefits>
+      <CompanyCourses></CompanyCourses>
       <PricingCta />
       <Footer></Footer>
     </main>
