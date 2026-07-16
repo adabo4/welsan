@@ -1,5 +1,5 @@
 import Benefits from "@/components/Benefits";
-import CompanyCourses from "@/components/CompanyCourses";
+import Corporate from "@/components/corporate/Corporate";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import PricingCta from "@/components/PricingTca";
@@ -9,7 +9,7 @@ export default function Home() {
     <main>
       <Header></Header>
       <Benefits></Benefits>
-      <CompanyCourses></CompanyCourses>
+      <Corporate></Corporate>
       <PricingCta />
       <Footer></Footer>
     </main>

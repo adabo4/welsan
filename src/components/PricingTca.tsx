@@ -9,8 +9,6 @@ import {
   UserRound,
 } from "lucide-react";
 import styles from "./pricingCta.module.css";
-import Image from "next/image";
-import smuha from "../../public/images/smuha.png";
 import { useModal } from "@/context/ModalContext";
 
 const bottomItems = [
