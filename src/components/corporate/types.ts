@@ -1,12 +1,17 @@
 export type CorporatePackage = {
   name: string;
   star: string;
-  who: string;
-  type: string;
-  duration: string;
+  employee: string;
+  classes: string;
+  time: string;
   price: string;
-  note: string;
-  highlight?: boolean;
+  description: string;
+  featured?: boolean;
+};
+
+export type CorporatePackagesProps = {
+  title: string;
+  packages: CorporatePackage[];
 };
 
 export type CorporateHeaderProps = {
@@ -21,11 +26,6 @@ export type CorporateBenefitsProps = {
   checklist: string[];
   includesTitle: string;
   includes: string[];
-};
-
-export type CorporatePackagesProps = {
-  title: string;
-  packages: CorporatePackage[];
 };
 
 export type CorporateCtaProps = {
