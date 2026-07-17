@@ -7,7 +7,7 @@ import VirtualClassroom from "./VirtualClassroom";
 export default function MainPricingCard() {
   const { openContactModal } = useModal();
   return (
-    <section id="pricing" className={styles.section}>
+    <section className={styles.section}>
       <div className={styles.card}>
         <div className={styles.infoSide}>
           <div

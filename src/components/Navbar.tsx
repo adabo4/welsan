@@ -74,7 +74,7 @@ export default function Navbar() {
                 }
               }}
             >
-              Home
+              Domov
             </button>
           </li>
           <li>
@@ -82,10 +82,21 @@ export default function Navbar() {
               type="button"
               onClick={() => {
                 setShow(false);
-                goToSection("pricing");
+                goToSection("cennik");
               }}
             >
               Cenník
+            </button>
+          </li>
+          <li>
+            <button
+              type="button"
+              onClick={() => {
+                setShow(false);
+                goToSection("firmy");
+              }}
+            >
+              Firemné vzdelávanie
             </button>
           </li>
         </ul>
