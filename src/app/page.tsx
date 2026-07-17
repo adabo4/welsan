@@ -2,7 +2,7 @@ import Benefits from "@/components/Benefits";
 import Corporate from "@/components/corporate/Corporate";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
-import PricingCta from "@/components/PricingTca";
+import Pricing from "@/components/Pricing";
 
 export default function Home() {
   return (
@@ -10,7 +10,7 @@ export default function Home() {
       <Header></Header>
       <Benefits></Benefits>
       <Corporate></Corporate>
-      <PricingCta />
+      <Pricing></Pricing>
       <Footer></Footer>
     </main>
   );

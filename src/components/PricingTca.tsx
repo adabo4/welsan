@@ -1,5 +1,6 @@
 "use client";
 import {
+  ArrowDownRight,
   ArrowRight,
   CalendarDays,
   MessageCircle,
@@ -10,6 +11,7 @@ import {
 } from "lucide-react";
 import styles from "./pricingCta.module.css";
 import { useModal } from "@/context/ModalContext";
+import VirtualClassroom from "./pricing/VirtualClassroom";
 
 const bottomItems = [
   { icon: ShieldCheck, text: "Bezpečné online prostredie" },
@@ -40,15 +42,47 @@ export default function PricingCta() {
         <div className={styles.divider} />
 
         <div className={styles.infoSide}>
-          <div className={`${styles.infoItem} ${styles.onlineLessons}`}>
+          <div
+            onClick={() =>
+              document
+                .getElementById("virtualClassroom")
+                ?.scrollIntoView({ behavior: "smooth", block: "start" })
+            }
+            className={`${styles.infoItem}   ${styles.onlineLessons}`}
+          >
             <span className={styles.iconCircle}>
               <Monitor size={34} />
             </span>
-            <div>
-              <h3>Online cez Google Meet</h3>
-              <p>Jednoducho, bezpečne a efektívne.</p>
+            <div className={styles.onlineContent}>
+              <div>
+                <h3>Online cez Virtuálnu učebňu</h3>
+                <p>
+                  Výučba prebieha v profesionálnej virtuálnej učebni navrhnutej
+                  špeciálne pre online výučbu jazykov.
+                </p>
+              </div>
+              <ArrowDownRight size={34} className={styles.moreArrow} />
             </div>
           </div>
+
+          {/* <div className={styles.infoSide}>
+            <span className={styles.iconCircle}>
+              <ArrowDown
+                onClick={() => setShowText((prev) => !prev)}
+                className={styles.arrowDown}
+              ></ArrowDown>
+            </span>
+            <div className={styles.infoItem}>
+              <div>
+                <p className={`${showText ? styles.show : ""}`}>
+                  Nie je potrebné nič inštalovať – stačí kliknúť na odkaz a
+                  pripojiť sa cez internetový prehliadač. Moderná virtuálna
+                  učebňa s interaktívnou tabuľou, zdieľaním materiálov a
+                  jednoduchým pripojením jedným kliknutím.
+                </p>
+              </div>
+            </div>
+          </div> */}
 
           <div className={styles.line} />
 
@@ -73,6 +107,8 @@ export default function PricingCta() {
           </div>
         </div>
       </div>
+
+      <VirtualClassroom></VirtualClassroom>
 
       <div className={styles.bottomBar}>
         {bottomItems.map((item) => {

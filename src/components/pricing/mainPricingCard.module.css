@@ -1,0 +1,522 @@
+.section {
+    padding: 4rem 5vw 0;
+    background: linear-gradient(180deg, #eef3ff 0%, #ffffff 100%);
+}
+
+.card {
+    width: 100%;
+    max-width: 1350px;
+    margin: 0 auto;
+    padding: 4rem;
+
+    background: rgba(255, 255, 255, 0.92);
+    border: 1px solid rgba(26, 39, 68, 0.08);
+    border-radius: 34px;
+    box-shadow: 0 24px 70px rgba(26, 39, 68, 0.12);
+}
+
+/* =========================
+   TOP INFORMATION ROW
+========================= */
+
+.infoSide {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 2rem;
+}
+
+.infoItem {
+    min-width: 0;
+    display: flex;
+    align-items: flex-start;
+    gap: 1.25rem;
+    padding: 1.25rem;
+    border-radius: 22px;
+}
+
+.iconCircle {
+    width: 76px;
+    height: 76px;
+
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: var(--text);
+    background: #eef3ff;
+    border-radius: 50%;
+
+    transition:
+        color 0.25s ease,
+        background-color 0.25s ease,
+        transform 0.25s ease;
+}
+
+.infoItem h3 {
+    margin: 0;
+
+    color: var(--text);
+    font-family: var(--font-montserrat);
+    font-size: clamp(1.2rem, 1.6vw, 1.7rem);
+    font-weight: 800;
+    line-height: 1.2;
+    text-transform: uppercase;
+}
+
+.infoItem p {
+    margin: 0.4rem 0 0;
+
+    color: rgba(26, 39, 68, 0.72);
+    font-family: var(--font-montserrat);
+    font-size: clamp(0.95rem, 1vw, 1.15rem);
+    font-weight: 500;
+    line-height: 1.6;
+}
+
+/* =========================
+   VIRTUAL CLASSROOM LINK
+========================= */
+
+.onlineLessons {
+    cursor: pointer;
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease,
+        background-color 0.25s ease;
+}
+
+.onlineLessons:hover {
+    transform: translateY(-4px);
+    background: rgba(238, 243, 255, 0.5);
+    box-shadow: 0 15px 35px rgba(16, 38, 93, 0.12);
+}
+
+.onlineLessons:hover .iconCircle {
+    color: white;
+    background: #c9a227;
+    transform: scale(1.04);
+}
+
+.onlineContent {
+    min-width: 0;
+    flex: 1;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.onlineContent>div {
+    min-width: 0;
+}
+
+.moreArrow {
+    flex-shrink: 0;
+    opacity: 0.35;
+
+    transition:
+        opacity 0.25s ease,
+        transform 0.25s ease;
+}
+
+.onlineLessons:hover .moreArrow {
+    opacity: 1;
+    transform: translate(4px, 4px);
+}
+
+/* =========================
+   DIVIDER
+========================= */
+
+.divider {
+    width: 100%;
+    height: 1px;
+    margin: 2.5rem 0;
+
+    background: linear-gradient(to right,
+            transparent,
+            rgba(201, 162, 39, 0.55),
+            transparent);
+}
+
+/* =========================
+   BOTTOM ROW
+========================= */
+
+.bottomRow {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    align-items: center;
+    gap: 3rem;
+}
+
+.priceSide {
+    min-width: 0;
+}
+
+.note {
+    width: min(100%, 500px);
+    min-height: 210px;
+    margin: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 2rem;
+    background: url("/images/smuha zlata.png") center / contain no-repeat;
+
+    color: var(--text);
+    font-family: var(--font-amertha);
+    font-size: clamp(2rem, 3vw, 2.7rem);
+    line-height: 1.05;
+    text-align: center;
+}
+
+.ctaWrapper {
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ctaButton {
+    width: 100%;
+    max-width: 500px;
+    min-width: 360px;
+
+    padding: 1.2rem 1.3rem 1.2rem 2rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.5rem;
+
+    color: white;
+    background: linear-gradient(135deg, #10265d 0%, #1d3578 100%);
+    border: none;
+    border-radius: 22px;
+
+    font-family: var(--font-montserrat);
+    font-size: clamp(1.15rem, 1.5vw, 1.65rem);
+    font-weight: 800;
+    line-height: 1.2;
+    text-align: left;
+    text-transform: uppercase;
+
+    cursor: pointer;
+    box-shadow: 0 14px 30px rgba(16, 38, 93, 0.28);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        background-color 0.3s ease;
+}
+
+.ctaButton span {
+    width: 56px;
+    height: 56px;
+
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: var(--text);
+    background: linear-gradient(135deg, #f7df8b, #c9a227);
+    border-radius: 50%;
+
+    transition:
+        color 0.3s ease,
+        background 0.3s ease,
+        transform 0.3s ease;
+}
+
+.ctaButton:hover {
+    background: #c9a227;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 24px rgba(26, 39, 68, 0.2);
+}
+
+.ctaButton:hover span {
+    color: white;
+    background: linear-gradient(135deg, #2952b4, #1a2744);
+    transform: translateX(3px);
+}
+
+.script {
+    margin: 0.4rem 0 0;
+
+    color: var(--text);
+    font-family: var(--font-amertha);
+    font-size: clamp(2rem, 3vw, 3rem);
+    line-height: 1;
+    text-align: center;
+}
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 1024px) {
+    .section {
+        padding: 4rem 2rem 0;
+    }
+
+    .card {
+        padding: 2.75rem;
+    }
+
+    .infoSide {
+        gap: 1.25rem;
+    }
+
+    .infoItem {
+        padding: 1rem;
+    }
+
+    .iconCircle {
+        width: 64px;
+        height: 64px;
+    }
+
+    .iconCircle svg {
+        width: 28px;
+        height: 28px;
+    }
+
+    .bottomRow {
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+    }
+
+    .note {
+        min-height: 180px;
+        padding: 1.5rem;
+    }
+
+    .ctaButton {
+        min-width: 0;
+        padding: 1rem 1rem 1rem 1.4rem;
+    }
+
+    .ctaButton span {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 768px) {
+    .section {
+        padding: 3rem 1rem 0;
+    }
+
+    .card {
+        padding: 1.75rem;
+        border-radius: 26px;
+    }
+
+    .infoSide {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .infoItem {
+        padding: 1rem 0;
+    }
+
+    .onlineLessons {
+        padding: 1rem;
+    }
+
+    .onlineLessons:hover {
+        transform: none;
+    }
+
+    .divider {
+        margin: 1.75rem 0;
+    }
+
+    .bottomRow {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .priceSide {
+        display: flex;
+        justify-content: center;
+    }
+
+    .note {
+        width: 100%;
+        max-width: 430px;
+        min-height: 160px;
+        padding: 1.5rem;
+    }
+
+    .ctaWrapper {
+        width: 100%;
+    }
+
+    .ctaButton {
+        width: 100%;
+        max-width: 430px;
+        min-width: 0;
+        padding: 1rem 1rem 1rem 1.25rem;
+    }
+
+    .ctaButton span {
+        width: 48px;
+        height: 48px;
+    }
+}
+
+/* =========================
+   SMALL PHONES
+========================= */
+
+@media (max-width: 480px) {
+    .section {
+        padding-inline: 0.75rem;
+    }
+
+    .card {
+        padding: 1.25rem;
+        border-radius: 22px;
+    }
+
+    .infoItem {
+        gap: 0.85rem;
+    }
+
+    .onlineLessons {
+        padding: 0.75rem;
+    }
+
+    .iconCircle {
+        width: 52px;
+        height: 52px;
+    }
+
+    .iconCircle svg {
+        width: 24px;
+        height: 24px;
+    }
+
+    .infoItem h3 {
+        font-size: 1rem;
+    }
+
+    .infoItem p {
+        font-size: 0.88rem;
+        line-height: 1.5;
+    }
+
+    .onlineContent {
+        gap: 0.5rem;
+    }
+
+    .moreArrow {
+        width: 24px;
+        height: 24px;
+    }
+
+    .divider {
+        margin: 1.25rem 0;
+    }
+
+    .note {
+        min-height: 125px;
+        padding: 1rem;
+        font-size: 1.60rem;
+        align-items: flex-start;
+        /*background-position: center 27px;*/
+        padding-top: 1.3rem;
+    }
+
+    .ctaButton {
+        gap: 0.75rem;
+        padding: 0.85rem 0.85rem 0.85rem 1rem;
+
+        font-size: 0.95rem;
+        border-radius: 18px;
+    }
+
+    .ctaButton span {
+        width: 44px;
+        height: 44px;
+    }
+
+    .ctaButton span svg {
+        width: 23px;
+        height: 23px;
+    }
+
+    .script {
+        font-size: 1.85rem;
+    }
+}
+
+/* =========================
+   VERY SMALL PHONES
+========================= */
+
+@media (max-width: 360px) {
+    .section {
+        padding-inline: 0.5rem;
+    }
+
+    .card {
+        padding: 1rem;
+    }
+
+    .infoItem {
+        gap: 0.7rem;
+    }
+
+    .iconCircle {
+        width: 46px;
+        height: 46px;
+    }
+
+    .iconCircle svg {
+        width: 21px;
+        height: 21px;
+    }
+
+    .infoItem h3 {
+        font-size: 0.9rem;
+    }
+
+    .infoItem p {
+        font-size: 0.82rem;
+    }
+
+    .moreArrow {
+        display: none;
+    }
+
+    .note {
+        min-height: 110px;
+        font-size: 1.45rem;
+    }
+
+    .ctaButton {
+        font-size: 0.82rem;
+    }
+
+    .ctaButton span {
+        width: 40px;
+        height: 40px;
+    }
+
+    .script {
+        font-size: 1.65rem;
+    }
+}
