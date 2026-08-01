@@ -84,8 +84,8 @@ export default function Corporate() {
             <p className={styles.intro}>
               Ponúkam online kurzy angličtiny šité na mieru slovenským firmám –
               od individuálneho koučingu až po malé skupiny. Výučba prebieha cez
-              Google Meet, takže sa zamestnanci môžu pripojiť z kancelárie aj z
-              domu.
+              virtuálnu učebňu, takže sa zamestnanci môžu pripojiť z kancelárie
+              aj z domu.
             </p>
           </header>
 

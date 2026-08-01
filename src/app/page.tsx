@@ -11,6 +11,7 @@ export default function Home() {
       <Benefits></Benefits>
       <Corporate></Corporate>
       <Pricing></Pricing>
+      {/* <Materials></Materials> */}
       <Footer></Footer>
     </main>
   );
